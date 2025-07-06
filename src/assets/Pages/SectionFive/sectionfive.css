@@ -1,0 +1,110 @@
+.sec-five h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    padding: 30px;
+    text-align: center;
+}
+.sec-five{
+    padding: 30px;
+    background-color: #E1ECDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-five-container{
+    width: 87%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.sec-five-container .contact{
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sec-five .contact .card-one, .card-two{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 20px;
+    margin: 20px;
+    gap: 30px;
+}
+.contact-icons{
+    font-size: 4rem;
+}
+.card-text h3{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.CV-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border-radius: 1rem;
+    background-color: #E1ECDE;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+.CV-button:hover{
+    background-color: #71866b;
+    color: white;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .sec-five-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sec-five-container .contact {
+        width: 100%;
+        align-items: center;
+    }
+
+    .sec-five .contact .card-one,
+    .sec-five .contact .card-two {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .contact-icons {
+        font-size: 3rem;
+    }
+
+    .card-text h3 {
+        font-size: 18px;
+    }
+
+    .card-text p {
+        font-size: 14px;
+        word-break: break-word;
+    }
+}

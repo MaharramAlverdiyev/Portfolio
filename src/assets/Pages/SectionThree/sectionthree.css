@@ -1,0 +1,60 @@
+.sec-three h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    padding: 30px;
+}
+.sec-three-container{
+    width: 87%;
+    display: flex;
+    justify-content: center;
+}
+.sec-three{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E1ECDE;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.map-div .map-img{
+    width: 50px;
+    height: 50px;
+    object-fit:contain;
+}
+.map-div .map-text{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.map-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    padding:10px;
+    border-radius: 1em;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s ease;
+}
+.map-div:hover{
+    transform: scale(1.2);
+}
+.sec-three-skills{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 20px; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.sec-three-container{
+    display: flex;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 1em;
+    margin-top: 30px;
+}
