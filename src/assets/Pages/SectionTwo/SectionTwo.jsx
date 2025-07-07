@@ -16,7 +16,7 @@ export const SectionTwo = () => {
                 <div className="about" >
                     <div className="about-container">
                         <div className="about-me">
-                            <h2 className='about-me-title' style={{ fontSize: '30px' }}>Junior Strong Front-end Developer in Baku <IoLocation style={{ color: 'red' }} /></h2>
+                            <h2 className='about-me-title' style={{ fontSize: '25px' }}>Junior Strong Front-end Developer in Baku <IoLocation style={{ color: 'red' }} /></h2>
                             <p className='about-me-p'>Hey, my name is Maharram. I'm 22, and I'm a Frontend Developer. My first mission is to create and develop a clean Web Site.</p>
                             <p className='about-me-p'>My main stack currently is React.js, Redux in combination with Tailwind CSS and Material</p>
                         </div>

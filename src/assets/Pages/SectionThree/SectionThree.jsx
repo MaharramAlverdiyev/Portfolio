@@ -19,7 +19,7 @@ export const SectionThree = () => {
     return (
         <div className='sec-three' id='skills'>
             <h1 style={{ textAlign: 'center' }}>Skills</h1>
-            <p style={{ textAlign: 'center', color: '#555', fontFamily: 'Montserrat', paddingBottom:'30px' }}>Here are some of my skills on which I have been working on for the past 1 years.</p>
+            <p style={{ textAlign: 'center', color: '#555', fontFamily: 'Montserrat', paddingBottom:'30px', padding:'15px' }}>Here are some of my skills on which I have been working on for the past 1 years.</p>
             <div className="sec-three-container">
                 <div className="sec-three-skills">
                     {data.map((item) => (

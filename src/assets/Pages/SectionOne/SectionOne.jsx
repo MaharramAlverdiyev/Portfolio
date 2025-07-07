@@ -63,10 +63,10 @@ export const SectionOne = () => {
                         <h4 className='h4'>{text}</h4>
                     </div>
                     <div className={`left-icons ${isCollapsed ? "collapsed" : ""}`}>
-                        <a href="#"><FaGithub /></a>
-                        <a href="#"><FaLinkedin /></a>
-                        <a href="#"><FaFacebook /></a>
-                        <a href="#"><MdOutlineAlternateEmail /></a>
+                        <a href="https://github.com/MaharramAlverdiyev"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/maharram-alverdiyev-39b480313/"><FaLinkedin /></a>
+                        <a href="https://www.facebook.com/profile.php?id=100005368068160"><FaFacebook /></a>
+                        <a href=""><MdOutlineAlternateEmail /></a>
                     </div>
                 </div>
                 <div className="sec-one-right">
@@ -74,7 +74,7 @@ export const SectionOne = () => {
                         ref={imageRef}
                         src={MaharramAlverdiyev}
                         alt="Maharram Alverdiyev"
-                        className={isVisible ? "animate-in" : "hidden-right"}
+                          className={isVisible ? "visible" : ""}
                     />
                 </div>
             </div>

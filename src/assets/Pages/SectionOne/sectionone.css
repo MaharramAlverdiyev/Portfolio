@@ -1,7 +1,15 @@
-.sec-one-right img{
-    width: 400px;
-    height: 591px; 
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+.sec-one-right img {
+  width: 400px;
+  height: 591px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 2s ease-in-out;
+}
+
+.sec-one-right img.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 
