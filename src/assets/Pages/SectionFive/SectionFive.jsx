@@ -10,7 +10,7 @@ export const SectionFive = () => {
     return (
         <div className='sec-five' id='contact'>
             <h1>Contact</h1>
-        <a className='CV-button' href="/CV/MaharramAlverdiyev_CV.pdf" download> Download my CV </a>
+        <a className='CV-button' href={CVResume} download> Download my CV </a>
             <div className="sec-five-container">
                 <div className="contact">
                     <div className="card-one">
