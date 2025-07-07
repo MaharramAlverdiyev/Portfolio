@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
-    /* border-bottom: 2px solid black ;  */
-    /* border-top: 2px solid black; */
+    align-items: center;
+
 }
 
 .sec-two-column {
@@ -91,6 +91,10 @@
     width: 50%;
 }
 
+.about-me-title{
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .about-center {
       flex-direction: column;
@@ -120,5 +124,10 @@
       top: -30%;
       font-size: 3rem;
     }
+    .about-me-p {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
   }
   

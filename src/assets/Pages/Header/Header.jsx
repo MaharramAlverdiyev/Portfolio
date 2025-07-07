@@ -14,6 +14,16 @@ export const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+ const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    const yOffset = -80; // header hündürlüyü qədər (70-80px ətrafı)
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    setIsMenuOpen(false);
+  }
+};
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
@@ -44,47 +54,41 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const NavLinks = () => (
+    <ul>
+      <li className={isHomeActive ? "active" : ""} onClick={() => scrollToSection("home")}>Home</li>
+      <li className={isAboutActive ? "active" : ""} onClick={() => scrollToSection("about")}>About</li>
+      <li className={isSkillsActive ? "active" : ""} onClick={() => scrollToSection("skills")}>Skills</li>
+      <li className={isProjectsActive ? "active" : ""} onClick={() => scrollToSection("project")}>Projects</li>
+      <li className={isContactActive ? "active" : ""} onClick={() => scrollToSection("contact")}>Contact</li>
+    </ul>
+  );
+
   return (
     <>
-      {/* İlk header */}
+      {/* Normal header */}
       <div className={`header ${showBlackHeader ? "hide-header" : "show-header"}`}>
         <div className="header-column">
           <div className="logo">
             <img src={logo} alt="Logo" />
           </div>
-
           <button className="menu-toggle" onClick={toggleMenu}>☰</button>
-
           <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-            <ul>
-              <li className={isHomeActive ? "active" : ""}>Home</li>
-              <li className={isAboutActive ? "active" : ""}>About</li>
-              <li className={isSkillsActive ? "active" : ""}>Skills</li>
-              <li className={isProjectsActive ? "active" : ""}>Projects</li>
-              <li className={isContactActive ? "active" : ""}>Contact</li>
-            </ul>
+            <NavLinks />
           </nav>
         </div>
       </div>
 
-      {/* Scroll sonrası siyah header */}
+      {/* Scroll sonrası qara header */}
       {showBlackHeader && (
         <div className="black-header">
           <div className="black-header-content">
             <div className="logo">
               <img src={logo} alt="Logo" />
             </div>
-
             <button className="menu-toggle" onClick={toggleMenu}>☰</button>
-
             <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-              <ul>
-                <li className={isHomeActive ? "active" : ""}>Home</li>
-                <li className={isAboutActive ? "active" : ""}>About</li>
-                <li className={isSkillsActive ? "active" : ""}>Skills</li>
-                <li className={isProjectsActive ? "active" : ""}>Projects</li>
-                <li className={isContactActive ? "active" : ""}>Contact</li>
-              </ul>
+              <NavLinks />
             </nav>
           </div>
         </div>

@@ -9,7 +9,7 @@ export const SectionFive = () => {
     const downloadFile = () => {
         const link = document.createElement('a');
         link.href = "../../../../public/MaharramAlverdiyev_CV.pdf"; 
-        link.download = 'Maharram Alverdiyev CV.pdf'; 
+        link.download = 'MaharramAlverdiyev_CV.pdf'; 
         link.click();
       };
     return (
