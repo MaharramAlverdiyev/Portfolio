@@ -4,19 +4,13 @@ import { IoLocation } from "react-icons/io5";
 import { IoMdMailOpen } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import {CVResume} from "../../Components/CV-file/MaharramAlverdiyev_CV.pdf"
+import CVResume from "../../Components/CV-file/MaharramAlverdiyev_CV.pdf"
 
 export const SectionFive = () => {
-    const downloadFile = () => {
-        const link = document.createElement('a');
-        link.href = "../../../../public/MaharramAlverdiyev_CV.pdf"; 
-        link.download = {CVResume} ; 
-        link.click();
-      };
     return (
         <div className='sec-five' id='contact'>
             <h1>Contact</h1>
-            <button onClick={downloadFile} className='CV-button'>Download My CV</button>
+        <a className='CV-button' href="/CV/MaharramAlverdiyev_CV.pdf" download> Download my CV </a>
             <div className="sec-five-container">
                 <div className="contact">
                     <div className="card-one">

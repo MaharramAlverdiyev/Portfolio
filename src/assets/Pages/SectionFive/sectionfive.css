@@ -66,7 +66,10 @@
     cursor: pointer;
     margin-bottom: 20px;
     transition: 0.5s ease;
+    color: black;
+    border: 3px solid black;
 }
+
 
 .CV-button:hover{
     background-color: #71866b;
