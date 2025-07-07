@@ -1,128 +1,145 @@
 .sec-one-right img {
-  width: 400px;
+  width: auto;
   height: 591px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0;
   transform: translateX(100px);
-  transition: all 2s ease-in-out;
+  transition: 0.8s ease-in-out;
+  object-fit: cover;
 }
 
 .sec-one-right img.visible {
-  opacity: 1;
   transform: translateX(0);
 }
 
 
-.sec-one-column{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.sec-one-column {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.sec-one{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background-image: url(../../Images//Secone.jpg);
-    background-size: cover;
+
+.sec-one {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url(../../Images//Secone.jpg);
+  background-size: cover;
 }
-.sec-one-left{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+
+.sec-one-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transform: translateX(-100px);
+  transition: 0.8s ease-in-out;
 }
-.sec-one-left h4{
-    font-size: 3rem;
-    font-family: 'Raleway';
-    font-weight: 600;
-    transition: 1.5s ease-in-out;
+
+.sec-one-left.visible {
+  transform: translateX(0);
 }
-.sec-one-left .h4{
-    font-size: 2rem;
-    font-family: 'Raleway';
-    font-weight: 800;
-    color: #a6bb9f;
+
+.sec-one-left h4 {
+  font-size: 3rem;
+  font-family: 'Raleway';
+  font-weight: 600;
+  transition: 1.5s ease-in-out;
 }
-.sec-one-left h1{
-    font-size: 4rem;
-    font-family: 'Raleway';
-    font-weight: 700;
+
+.sec-one-left .h4 {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: 800;
+  color: #a6bb9f;
 }
-.sec-one-left .left-icons{
-    font-size: 3rem;;
-    display: flex;
-    gap: 30px;   
+
+.sec-one-left h1 {
+  font-size: 4rem;
+  font-family: 'Raleway';
+  font-weight: 700;
 }
-.sec-one-left .left-icons a{
-    color: black;
-    box-shadow: -4px 10px rgba(191, 213, 183, 0.5);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #b7cbb0;
+
+.sec-one-left .left-icons {
+  font-size: 3rem;
+  ;
+  display: flex;
+  gap: 30px;
 }
+
+.sec-one-left .left-icons a {
+  color: black;
+  box-shadow: -4px 10px rgba(191, 213, 183, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #b7cbb0;
+}
+
 .left-text {
 
-    transition: 0.3s ease-in-out;
-  }
-  
-  .left-text.collapsed {
-    margin-top: -20px; /* H1 ile ikonlar arasındaki boşluğu azalt */
-  }
-  
-  .left-icons {
-    display: flex;
+  transition: 0.3s ease-in-out;
+}
+
+
+.left-icons {
+  display: flex;
+  gap: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.h4-wrapper {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .sec-one-column {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
     gap: 20px;
-    transition:0.3s ease-in-out;
   }
-  
-  .left-icons.collapsed {
-    margin-top: -20px; /* İkonları yukarı yaklaştır */
+
+  .sec-one-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
   }
-  
-  @media (max-width: 768px) {
-    .sec-one-column {
-      flex-direction: column;
-      align-items: center;
-      width: 90%;
-      gap: 20px;
-    }
-  
-    .sec-one-left {
-      width: 100%;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-    }
-  
-    .sec-one-left h1 {
-      font-size: 2.5rem;
-    }
-  
-    .sec-one-left h4 {
-      font-size: 1.5rem;
-    }
-  
-    .sec-one-left .h4 {
-      font-size: 1.2rem;
-    }
-  
-    .sec-one-left .left-icons {
-      flex-wrap: wrap;
-      justify-content: center;
-      font-size: 2rem;
-      gap: 15px;
-    }
-  
-    .sec-one-right img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .sec-one {
-      padding: 30px 0;
-    }
+
+  .sec-one-left h1 {
+    font-size: 2.5rem;
   }
-  
+
+  .sec-one-left h4 {
+    font-size: 1.5rem;
+  }
+
+  .sec-one-left .h4 {
+    font-size: 1.2rem;
+  }
+
+  .sec-one-left .left-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 15px;
+  }
+
+  .sec-one-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-one {
+    padding: 30px 0;
+  }
+
+  .h4-wrapper {
+    justify-content: center;
+  }
+}
