@@ -76,6 +76,10 @@
     color: white;
     transform: scale(1.2);
 }
+.contact-buttons {
+    display: flex;
+    gap: 30px;
+}
 
 @media screen and (max-width: 768px) {
     .sec-five-container {
@@ -110,4 +114,10 @@
         font-size: 14px;
         word-break: break-word;
     }
+    .contact-buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 }

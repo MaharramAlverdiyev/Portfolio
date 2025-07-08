@@ -10,7 +10,12 @@ export const SectionFive = () => {
     return (
         <div className='sec-five' id='contact'>
             <h1>Contact</h1>
-        <a className='CV-button' href={CVResume} download> Download my CV </a>
+            <div className="contact-buttons">
+                <a className='CV-button' href={CVResume} download > Download my CV </a>
+                <a className='CV-button' href="https://mail.google.com/mail/?view=cm&fs=1&to=maharramalverdiyev890@gmail.com" 
+                target="_blank" rel="noopener noreferrer"> Contact with me </a>
+            </div>
+        
             <div className="sec-five-container">
                 <div className="contact">
                     <div className="card-one">

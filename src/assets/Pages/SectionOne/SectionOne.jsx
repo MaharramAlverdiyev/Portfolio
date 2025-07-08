@@ -65,10 +65,10 @@ export const SectionOne = () => {
                         </div>
                     </div>
                     <div className={`left-icons ${isCollapsed ? "collapsed" : ""}`}>
-                        <a href="https://github.com/MaharramAlverdiyev"><FaGithub /></a>
-                        <a href="https://www.linkedin.com/in/maharram-alverdiyev-39b480313/"><FaLinkedin /></a>
-                        <a href="https://www.facebook.com/profile.php?id=100005368068160"><FaFacebook /></a>
-                        <a href=""><MdOutlineAlternateEmail /></a>
+                        <a href="https://github.com/MaharramAlverdiyev" target='_blank' rel="noopener noreferrer"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/maharram-alverdiyev-39b480313/" target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
+                        <a href="https://www.facebook.com/profile.php?id=100005368068160" target='_blank' rel="noopener noreferrer"><FaFacebook /></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maharramalverdiyev890@gmail.com" target="_blank" rel="noopener noreferrer"><MdOutlineAlternateEmail /></a>
                     </div>
                 </div>
                 <div className="sec-one-right">
